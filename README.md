@@ -1,6 +1,9 @@
 # Site Entreprise Felicioni
 
-Site vitrine statique (HTML/CSS/JS, zéro dépendance, zéro build). Déployable par simple upload FTP.
+Site vitrine statique (HTML/CSS/JS, zéro dépendance, zéro build).
+
+- **En ligne (démo)** : https://znk-v.github.io/felicioni/ — dépôt `zNk-v/felicioni`
+- **Domaine cible** : entreprise-felicioni.com (à brancher — voir plus bas)
 
 ## Arborescence
 
@@ -55,7 +58,7 @@ Tout est en clair dans `index.html`. Les couleurs, tailles et espacements sont c
 - Les deux images (`.compare__before` / `.compare__after`) doivent avoir **exactement les mêmes dimensions** et être prises **du même point de vue**, sinon l'effet est illisible.
 - Pour ajouter un chantier : dupliquer le bloc `.ba__panel`, lui donner un nouvel `id`, ajouter l'onglet correspondant, mettre les images `avant-XXX` / `apres-XXX`.
 
-⚠️ **Les images `avant-terrasse` / `apres-terrasse` actuelles sont une DÉMO** (l'« après » est généré, l'« avant » est une version retouchée). **À remplacer par un vrai chantier avant/après** avant la mise en ligne publique. Le site affiche une mention « exemple de démonstration » tant que c'est le cas — la retirer une fois les vraies photos en place (`index.html`, ligne `.ba__demo`).
+Le comparateur utilise une **vraie paire alignée** fournie par le client (pelouse d'origine → terrasse carrelée terminée). Pour ajouter d'autres chantiers, dupliquer le bloc `.ba__panel` + l'onglet.
 
 ## Brancher le formulaire (Formspree)
 
@@ -73,7 +76,6 @@ Tout est en clair dans `index.html`. Les couleurs, tailles et espacements sont c
 |----|------|
 | `index.html` | `[FORMSPREE_ID]` → ID Formspree réel |
 | `index.html` (section Avis) | `[LIEN_FICHE_GOOGLE]` → URL de la fiche Google Business |
-| `index.html` (Avant/Après) | Remplacer la paire terrasse **démo** par un vrai chantier + retirer la mention démo |
 | `mentions-legales.html` | Forme juridique, **SIRET**, TVA, directeur de publication |
 | `mentions-legales.html` | Assurance décennale : **assureur + n° de contrat** |
 | `mentions-legales.html` | **Hébergeur** (nom, adresse, téléphone) |
