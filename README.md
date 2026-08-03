@@ -2,8 +2,10 @@
 
 Site vitrine statique (HTML/CSS/JS, zéro dépendance, zéro build).
 
-- **En ligne (démo)** : https://znk-v.github.io/felicioni/ — dépôt `zNk-v/felicioni`
-- **Domaine cible** : entreprise-felicioni.com (à brancher — voir plus bas)
+- **Hébergement** : Hostinger (plan Business), site `entreprise-felicioni.com`, racine `public_html`
+- **Déploiement** : automatique depuis GitHub — un push sur `main` du dépôt `zNk-v/felicioni` redéploie le site
+- **Ancienne démo** : https://znk-v.github.io/felicioni/ (GitHub Pages, conservée comme miroir)
+- **Domaine** : entreprise-felicioni.com — DNS chez Wix, enregistrement A vers `46.202.172.188`
 
 ## Arborescence
 
