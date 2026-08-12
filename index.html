@@ -31,8 +31,8 @@
 
 <!-- Perf : préchargement police + image hero -->
 <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/hero-piscine-680.webp" as="image" type="image/webp" media="(min-width:860px)">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" href="img/hero-terrasse-bois-pergola-renovation-720.webp" as="image" type="image/webp" media="(min-width:860px)">
+<link rel="stylesheet" href="css/styles.css?v=3">
 
 <!-- Données structurées -->
 <script type="application/ld+json">
@@ -65,7 +65,13 @@
     {"@type":"City","name":"Plaisance-du-Touch"},
     {"@type":"City","name":"Cugnaux"},
     {"@type":"City","name":"Blagnac"},
-    {"@type":"City","name":"Toulouse"}
+    {"@type":"City","name":"Toulouse"},
+    {"@type":"City","name":"Merville"},
+    {"@type":"City","name":"Saint-Orens-de-Gameville"},
+    {"@type":"City","name":"Pompertuzat"},
+    {"@type":"City","name":"Préserville"},
+    {"@type":"City","name":"Pujaudran"},
+    {"@type":"City","name":"Castelnaudary"}
   ],
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"18","bestRating":"5"}
 }
@@ -138,10 +144,10 @@
     </div>
     <div class="hero__media">
       <picture>
-        <source type="image/webp" srcset="img/hero-piscine-560.webp 560w, img/hero-piscine-680.webp 680w" sizes="(min-width:860px) 480px, 90vw">
-        <img src="img/hero-piscine-680.jpg" srcset="img/hero-piscine-560.jpg 560w, img/hero-piscine-680.jpg 680w" sizes="(min-width:860px) 480px, 90vw" width="680" height="1020" alt="Terrasse en bois et piscine réalisées par Entreprise Felicioni au coucher du soleil, ouest toulousain" fetchpriority="high" decoding="async">
+        <source type="image/webp" srcset="img/hero-terrasse-bois-pergola-renovation-560.webp 560w, img/hero-terrasse-bois-pergola-renovation-720.webp 720w" sizes="(min-width:860px) 480px, 90vw">
+        <img src="img/hero-terrasse-bois-pergola-renovation-720.jpg" srcset="img/hero-terrasse-bois-pergola-renovation-560.jpg 560w, img/hero-terrasse-bois-pergola-renovation-720.jpg 720w" sizes="(min-width:860px) 480px, 90vw" width="720" height="540" alt="Terrasse en bois exotique et pergola à claire-voie réalisées par Entreprise Felicioni devant une villa contemporaine" fetchpriority="high" decoding="async">
       </picture>
-      <span class="hero__tag">Terrasse &amp; contour de piscine — ouest toulousain</span>
+      <span class="hero__tag">Terrasse bois &amp; pergola — région toulousaine</span>
     </div>
   </div>
 </section>
@@ -212,7 +218,10 @@
     <p class="overline reveal">Avant / Après</p>
     <h2 class="reveal">Faites glisser pour voir la transformation</h2>
     <div class="ba__tabs reveal" role="tablist" aria-label="Chantiers avant / après">
-      <button class="ba__tab" role="tab" aria-selected="true" data-panel="ba-terrasse">Terrasse</button>
+      <button class="ba__tab" role="tab" aria-selected="true" data-panel="ba-terrasse">Terrasse carrelée</button>
+      <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-piscine">Terrasse bois &amp; piscine</button>
+      <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-portail">Portail &amp; clôture</button>
+      <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-facade">Nettoyage de façade</button>
     </div>
 
     <div class="ba__panel reveal" id="ba-terrasse" role="tabpanel">
@@ -229,6 +238,51 @@
       </div>
       <p class="compare__caption"><b>Création de terrasse carrelée</b> — ouest toulousain</p>
     </div>
+
+    <div class="ba__panel reveal" id="ba-piscine" role="tabpanel" hidden>
+      <div class="compare compare--portrait">
+        <img class="compare__after" src="img/apres-terrasse-bois-piscine-castelnaudary-680.jpg" srcset="img/apres-terrasse-bois-piscine-castelnaudary-520.jpg 520w, img/apres-terrasse-bois-piscine-castelnaudary-680.jpg 680w" sizes="(min-width:860px) 520px, 100vw" width="680" height="906" loading="lazy" decoding="async" alt="Terrasse en bois avec piscine et éclairage encastré au coucher du soleil, après travaux à Castelnaudary">
+        <img class="compare__before" src="img/avant-terrasse-bois-piscine-castelnaudary-1040.jpg" srcset="img/avant-terrasse-bois-piscine-castelnaudary-520.jpg 520w, img/avant-terrasse-bois-piscine-castelnaudary-1040.jpg 1040w" sizes="(min-width:860px) 520px, 100vw" width="1040" height="1387" loading="lazy" decoding="async" alt="Cour en friche entre des murs anciens avant la création de la terrasse et de la piscine à Castelnaudary">
+        <span class="compare__label compare__label--before">Avant</span>
+        <span class="compare__label compare__label--after">Après</span>
+        <div class="compare__handle" aria-hidden="true"><span class="compare__knob">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m15 18-6-6 6-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m9 18 6-6-6-6"/></svg>
+        </span></div>
+        <input class="compare__range" type="range" min="0" max="100" value="50" step="0.5" aria-label="Comparer avant et après" aria-valuetext="Après révélé à 50 %">
+      </div>
+      <p class="compare__caption"><b>Terrasse bois &amp; piscine dans une cour</b> — Castelnaudary (11)</p>
+    </div>
+
+    <div class="ba__panel reveal" id="ba-portail" role="tabpanel" hidden>
+      <div class="compare">
+        <img class="compare__after" src="img/apres-portail-mur-cloture-merville-1200.jpg" srcset="img/apres-portail-mur-cloture-merville-768.jpg 768w, img/apres-portail-mur-cloture-merville-1200.jpg 1200w" sizes="(min-width:860px) 1080px, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Portail aluminium gris et mur de clôture enduit blanc terminés à Merville">
+        <img class="compare__before" src="img/avant-portail-mur-cloture-merville-1200.jpg" srcset="img/avant-portail-mur-cloture-merville-768.jpg 768w, img/avant-portail-mur-cloture-merville-1200.jpg 1200w" sizes="(min-width:860px) 1080px, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Piliers et mur en parpaings bruts avant la pose du portail à Merville">
+        <span class="compare__label compare__label--before">Avant</span>
+        <span class="compare__label compare__label--after">Après</span>
+        <div class="compare__handle" aria-hidden="true"><span class="compare__knob">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m15 18-6-6 6-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m9 18 6-6-6-6"/></svg>
+        </span></div>
+        <input class="compare__range" type="range" min="0" max="100" value="50" step="0.5" aria-label="Comparer avant et après" aria-valuetext="Après révélé à 50 %">
+      </div>
+      <p class="compare__caption"><b>Mur de clôture enduit &amp; pose de portail</b> — Merville (31)</p>
+    </div>
+
+    <div class="ba__panel reveal" id="ba-facade" role="tabpanel" hidden>
+      <div class="compare compare--portrait">
+        <img class="compare__after" src="img/apres-nettoyage-facade-maison-pompertuzat-1040.jpg" srcset="img/apres-nettoyage-facade-maison-pompertuzat-520.jpg 520w, img/apres-nettoyage-facade-maison-pompertuzat-1040.jpg 1040w" sizes="(min-width:860px) 520px, 100vw" width="1040" height="1387" loading="lazy" decoding="async" alt="Façade de maison nettoyée, crépi beige uniforme après démoussage à Pompertuzat">
+        <img class="compare__before" src="img/avant-nettoyage-facade-maison-pompertuzat-1040.jpg" srcset="img/avant-nettoyage-facade-maison-pompertuzat-520.jpg 520w, img/avant-nettoyage-facade-maison-pompertuzat-1040.jpg 1040w" sizes="(min-width:860px) 520px, 100vw" width="1040" height="1387" loading="lazy" decoding="async" alt="Façade encrassée par les coulures et les mousses avant nettoyage à Pompertuzat">
+        <span class="compare__label compare__label--before">Avant</span>
+        <span class="compare__label compare__label--after">Après</span>
+        <div class="compare__handle" aria-hidden="true"><span class="compare__knob">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m15 18-6-6 6-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m9 18 6-6-6-6"/></svg>
+        </span></div>
+        <input class="compare__range" type="range" min="0" max="100" value="50" step="0.5" aria-label="Comparer avant et après" aria-valuetext="Après révélé à 50 %">
+      </div>
+      <p class="compare__caption"><b>Nettoyage de façade &amp; démoussage</b> — Pompertuzat (31)</p>
+    </div>
   </div>
 </section>
 
@@ -237,15 +291,36 @@
   <div class="wrap">
     <p class="overline reveal">Réalisations</p>
     <h2 class="reveal">Quelques chantiers récents</h2>
+    <p class="lead reveal">De Tournefeuille à Castelnaudary, en passant par Merville, Pompertuzat ou Saint-Orens : voici où on est intervenu ces derniers mois.</p>
+
+    <div class="filters reveal" role="group" aria-label="Filtrer les réalisations par type de chantier">
+      <button type="button" aria-pressed="true" data-filter="tout">Tout voir</button>
+      <button type="button" aria-pressed="false" data-filter="terrasses">Terrasses &amp; extérieurs</button>
+      <button type="button" aria-pressed="false" data-filter="piscines">Piscines</button>
+      <button type="button" aria-pressed="false" data-filter="facades">Façades &amp; enduits</button>
+      <button type="button" aria-pressed="false" data-filter="interieur">Intérieur</button>
+    </div>
+
     <div class="gallery reveal">
-      <button data-full="img/villa-ext-960.jpg" aria-label="Agrandir : villa moderne rénovée"><img src="img/villa-ext-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Villa moderne à toit-terrasse rénovée dans l’ouest toulousain"></button>
-      <button data-full="img/exterieurs-960.jpg" aria-label="Agrandir : contour de piscine"><img src="img/exterieurs-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Piscine avec contour en béton neuf au coucher du soleil"></button>
-      <button data-full="img/sdb-marbre-960.jpg" aria-label="Agrandir : salle de bain marbre"><img src="img/sdb-marbre-480.jpg" width="574" height="867" loading="lazy" decoding="async" alt="Salle de bain rénovée en marbre gris avec douche à l’italienne"></button>
-      <button data-full="img/carrelage-960.jpg" aria-label="Agrandir : douche carrelée"><img src="img/carrelage-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Douche à l’italienne carrelée en marbre blanc et noir"></button>
-      <button data-full="img/facade-960.jpg" aria-label="Agrandir : façade ravalée"><img src="img/facade-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Façade de maison ravalée, enduit blanc et brique"></button>
-      <button data-full="img/cuisine-960.jpg" aria-label="Agrandir : cuisine"><img src="img/cuisine-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Cuisine en cours de rénovation"></button>
-      <button data-full="img/villa-interieur-960.jpg" aria-label="Agrandir : intérieur de villa"><img src="img/villa-interieur-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Séjour de villa avec poutres apparentes et parquet chêne"></button>
-      <button data-full="img/chantier-dalle-960.jpg" aria-label="Agrandir : dalle de terrasse"><img src="img/chantier-dalle-480.jpg" width="574" height="1020" loading="lazy" decoding="async" alt="Dalle béton d’une terrasse en préparation avant carrelage"></button>
+      <button data-cat="terrasses" data-full="img/terrasse-bois-bassin-miroir-villa-800.jpg" aria-label="Agrandir : terrasse bois et bassin"><img src="img/terrasse-bois-bassin-miroir-villa-480.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Terrasse en bois exotique et bassin bordé de pierre grise devant une villa contemporaine"></button>
+      <button data-cat="terrasses" data-full="img/pose-terrasse-bois-equipe-felicioni-castelnaudary-960.jpg" aria-label="Agrandir : pose de terrasse bois par l’équipe"><img src="img/pose-terrasse-bois-equipe-felicioni-castelnaudary-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="L’équipe Entreprise Felicioni pose les lames d’une terrasse en bois sur lambourdes à Castelnaudary"></button>
+      <button data-cat="facades" data-full="img/nettoyage-facade-haute-pression-preserville-960.jpg" aria-label="Agrandir : nettoyage de façade"><img src="img/nettoyage-facade-haute-pression-preserville-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="Nettoyage haute pression d’une façade crépi depuis une échelle à Préserville"></button>
+      <button data-cat="piscines" data-full="img/construction-piscine-beton-pujaudran-960.jpg" aria-label="Agrandir : construction de piscine"><img src="img/construction-piscine-beton-pujaudran-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="Bassin de piscine en béton en cours d’enduit à Pujaudran"></button>
+      <button data-cat="terrasses" data-full="img/terrasse-bois-exotique-muret-pierre-villa-800.jpg" aria-label="Agrandir : terrasse bois et muret"><img src="img/terrasse-bois-exotique-muret-pierre-villa-480.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Large terrasse en bois exotique bordée d’un muret en pierre et de plantations"></button>
+      <button data-cat="interieur" data-full="img/renovation-interieure-placo-verriere-toulouse-960.jpg" aria-label="Agrandir : rénovation intérieure"><img src="img/renovation-interieure-placo-verriere-toulouse-480.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Pièce en rénovation à Toulouse : cloisons placo bandées et verrière d’atelier posée"></button>
+      <button data-cat="terrasses" data-full="img/pose-carrelage-travertin-terrasse-bannieres-960.jpg" aria-label="Agrandir : pose de travertin"><img src="img/pose-carrelage-travertin-terrasse-bannieres-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="Pose de carrelage travertin sur une terrasse extérieure à Bannières"></button>
+      <button data-cat="facades" data-full="img/enduit-mur-cloture-saint-orens-de-gameville-960.jpg" aria-label="Agrandir : enduit de mur de clôture"><img src="img/enduit-mur-cloture-saint-orens-de-gameville-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="Application d’un enduit de finition sur un mur de clôture à Saint-Orens-de-Gameville"></button>
+      <button data-cat="terrasses" data-full="img/escalier-pierre-exterieur-pergola-villa-600.jpg" aria-label="Agrandir : escalier extérieur"><img src="img/escalier-pierre-exterieur-pergola-villa-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="Escalier extérieur en pierre grise desservant une terrasse sous pergola"></button>
+      <button data-cat="piscines" data-full="img/plage-piscine-chape-beton-lisse-960.jpg" aria-label="Agrandir : plage de piscine"><img src="img/plage-piscine-chape-beton-lisse-480.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Plage de piscine en chape béton lissée fraîchement coulée, piscine à volet roulant"></button>
+      <button data-cat="terrasses" data-full="img/terrasse-travertin-maison-bannieres-960.jpg" aria-label="Agrandir : terrasse en travertin"><img src="img/terrasse-travertin-maison-bannieres-480.jpg" width="480" height="640" loading="lazy" decoding="async" alt="Terrasse en travertin en cours de pose le long d’une maison à Bannières"></button>
+      <button data-cat="facades" data-full="img/villa-ext-960.jpg" aria-label="Agrandir : villa moderne rénovée"><img src="img/villa-ext-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Villa moderne à toit-terrasse rénovée dans l’ouest toulousain"></button>
+      <button data-cat="piscines" data-full="img/exterieurs-960.jpg" aria-label="Agrandir : contour de piscine"><img src="img/exterieurs-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Piscine avec contour en béton neuf au coucher du soleil"></button>
+      <button data-cat="interieur" data-full="img/sdb-marbre-960.jpg" aria-label="Agrandir : salle de bain marbre"><img src="img/sdb-marbre-480.jpg" width="574" height="867" loading="lazy" decoding="async" alt="Salle de bain rénovée en marbre gris avec douche à l’italienne"></button>
+      <button data-cat="interieur" data-full="img/carrelage-960.jpg" aria-label="Agrandir : douche carrelée"><img src="img/carrelage-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Douche à l’italienne carrelée en marbre blanc et noir"></button>
+      <button data-cat="facades" data-full="img/facade-960.jpg" aria-label="Agrandir : façade ravalée"><img src="img/facade-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Façade de maison ravalée, enduit blanc et brique"></button>
+      <button data-cat="interieur" data-full="img/cuisine-960.jpg" aria-label="Agrandir : cuisine"><img src="img/cuisine-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Cuisine en cours de rénovation"></button>
+      <button data-cat="interieur" data-full="img/villa-interieur-960.jpg" aria-label="Agrandir : intérieur de villa"><img src="img/villa-interieur-480.jpg" width="765" height="1020" loading="lazy" decoding="async" alt="Séjour de villa avec poutres apparentes et parquet chêne"></button>
+      <button data-cat="terrasses" data-full="img/chantier-dalle-960.jpg" aria-label="Agrandir : dalle de terrasse"><img src="img/chantier-dalle-480.jpg" width="574" height="1020" loading="lazy" decoding="async" alt="Dalle béton d’une terrasse en préparation avant carrelage"></button>
     </div>
   </div>
 </section>
@@ -304,7 +379,13 @@
       <span>Blagnac</span><span>Toulouse ouest</span><span>Pibrac</span><span>Léguevin</span>
       <span>Frouzins</span><span>Villeneuve-Tolosane</span><span>La Salvetat-Saint-Gilles</span><span>Fonsorbes</span>
     </div>
-    <p class="zone__note reveal">Basés au 2 Impasse du Chasselas à Tournefeuille (31170), nous intervenons sur toutes les communes limitrophes. Un doute sur votre secteur ? Appelez-nous, on vous répond tout de suite.</p>
+    <p class="zone__note reveal">Basés au 2 Impasse du Chasselas à Tournefeuille (31170), nous intervenons sur toutes les communes limitrophes.</p>
+    <p class="overline reveal" style="margin-top:2rem">Et au-delà</p>
+    <div class="zone__list reveal">
+      <span>Merville</span><span>Saint-Orens-de-Gameville</span><span>Pompertuzat</span><span>Préserville</span>
+      <span>Pujaudran (32)</span><span>Bannières (81)</span><span>Castelnaudary (11)</span>
+    </div>
+    <p class="zone__note reveal">Pour un chantier complet, on se déplace sur toute la Haute-Garonne et les départements voisins. Un doute sur votre secteur ? Appelez-nous, on vous répond tout de suite.</p>
   </div>
 </section>
 
@@ -412,6 +493,6 @@
   <button class="lightbox__nav lightbox__nav--next" aria-label="Suivante">›</button>
 </div>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=3" defer></script>
 </body>
 </html>

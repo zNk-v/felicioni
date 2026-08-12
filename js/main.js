@@ -87,32 +87,52 @@
     });
   });
 
+  /* ---------- Filtres de la galerie ---------- */
+  var filterBtns = document.querySelectorAll('.filters button');
+  var shots = Array.prototype.slice.call(document.querySelectorAll('.gallery button'));
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var cat = btn.getAttribute('data-filter');
+      filterBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      shots.forEach(function (s) {
+        s.hidden = (cat !== 'tout' && s.getAttribute('data-cat') !== cat);
+      });
+    });
+  });
+
   /* ---------- Lightbox galerie ---------- */
   var lb = document.getElementById('lightbox');
   if (lb) {
     var lbImg = lb.querySelector('img');
-    var triggers = Array.prototype.slice.call(document.querySelectorAll('.gallery button'));
-    var idx = 0, lastFocus = null;
-    function show(i) {
-      idx = (i + triggers.length) % triggers.length;
-      var src = triggers[idx].getAttribute('data-full');
-      var alt = triggers[idx].querySelector('img').getAttribute('alt');
-      lbImg.src = src; lbImg.alt = alt;
+    var triggers = shots;
+    var current = null, lastFocus = null;
+    /* La navigation ne parcourt que les vignettes visibles du filtre en cours */
+    function visible() { return triggers.filter(function (t) { return !t.hidden; }); }
+    function show(btn) {
+      current = btn;
+      lbImg.src = btn.getAttribute('data-full');
+      lbImg.alt = btn.querySelector('img').getAttribute('alt');
     }
-    function open(i) { lastFocus = document.activeElement; show(i); lb.dataset.open = 'true';
+    function step(delta) {
+      var list = visible();
+      if (!list.length) return;
+      var pos = list.indexOf(current);
+      show(list[((pos + delta) % list.length + list.length) % list.length]);
+    }
+    function open(btn) { lastFocus = document.activeElement; show(btn); lb.dataset.open = 'true';
       document.body.style.overflow = 'hidden'; lb.querySelector('.lightbox__close').focus(); }
     function close() { lb.dataset.open = 'false'; document.body.style.overflow = '';
       lbImg.src = ''; if (lastFocus) lastFocus.focus(); }
-    triggers.forEach(function (btn, i) { btn.addEventListener('click', function () { open(i); }); });
+    triggers.forEach(function (btn) { btn.addEventListener('click', function () { open(btn); }); });
     lb.querySelector('.lightbox__close').addEventListener('click', close);
-    lb.querySelector('.lightbox__nav--prev').addEventListener('click', function () { show(idx - 1); });
-    lb.querySelector('.lightbox__nav--next').addEventListener('click', function () { show(idx + 1); });
+    lb.querySelector('.lightbox__nav--prev').addEventListener('click', function () { step(-1); });
+    lb.querySelector('.lightbox__nav--next').addEventListener('click', function () { step(1); });
     lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
     document.addEventListener('keydown', function (e) {
       if (lb.dataset.open !== 'true') return;
       if (e.key === 'Escape') close();
-      else if (e.key === 'ArrowLeft') show(idx - 1);
-      else if (e.key === 'ArrowRight') show(idx + 1);
+      else if (e.key === 'ArrowLeft') step(-1);
+      else if (e.key === 'ArrowRight') step(1);
     });
   }
 
