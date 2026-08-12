@@ -157,8 +157,12 @@ h3{font-size:1.25rem;font-family:var(--ff-text);font-weight:600;letter-spacing:0
 .hero__trust{list-style:none;padding:0;margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;font-size:.9rem;color:var(--beton)}
 .hero__trust span{display:inline-flex;align-items:center;gap:.4rem}
 .hero__trust svg{width:1.05em;height:1.05em;color:var(--rouge)}
-.hero__media{position:relative}
-.hero__media img{width:100%;border-radius:14px;box-shadow:var(--sh-lg);object-fit:cover;aspect-ratio:4/3}
+/* L'image déborde jusqu'au bord de l'écran : bandeau pleine largeur sur mobile,
+   débord à droite sur grand écran. `overflow:clip` évite la barre horizontale
+   quand 100vw compte l'ascenseur. */
+main{overflow-x:clip}
+.hero__media{position:relative;margin-inline:calc(-1 * var(--pad))}
+.hero__media img{width:100%;box-shadow:var(--sh-lg);object-fit:cover;aspect-ratio:4/3}
 .hero__tag{position:absolute;left:0;bottom:1rem;background:var(--bleu);color:#fff;
   font-size:.82rem;font-weight:500;padding:.55rem .9rem;border-radius:0 var(--r) var(--r) 0}
 
@@ -365,14 +369,19 @@ h3{font-size:1.25rem;font-family:var(--ff-text);font-weight:600;letter-spacing:0
   .callbar{display:none}
   .footer{padding-bottom:3rem}
 
-  .hero__grid{grid-template-columns:1.05fr .95fr}
-  .hero__media img{aspect-ratio:4/3}
+  .hero__grid{grid-template-columns:.92fr 1.08fr}
+  .hero__media{margin-inline:0 calc(-1 * var(--pad))}
+  .hero__media img{aspect-ratio:4/3;border-radius:14px 0 0 14px}
   .prest__grid{grid-template-columns:repeat(3,1fr)}
   .steps{grid-template-columns:repeat(3,1fr)}
   .compare{aspect-ratio:16/10}
   .compare--portrait{aspect-ratio:3/4}
   .contact__grid{grid-template-columns:.9fr 1.1fr}
   .reviews__grid{grid-template-columns:repeat(2,1fr)}
+}
+/* Au-delà de la largeur du conteneur, le débord se calcule sur le viewport */
+@media (min-width:1120px){
+  .hero__media{margin-inline:0 calc((var(--maxw) - 100vw) / 2 - var(--pad))}
 }
 @media (min-width:1040px){
   .gallery{columns:4}

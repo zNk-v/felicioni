@@ -32,7 +32,7 @@
 <!-- Perf : préchargement police + image hero -->
 <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="img/hero-terrasse-bois-pergola-renovation-720.webp" as="image" type="image/webp" media="(min-width:860px)">
-<link rel="stylesheet" href="css/styles.css?v=3">
+<link rel="stylesheet" href="css/styles.css?v=5">
 
 <!-- Données structurées -->
 <script type="application/ld+json">
@@ -144,8 +144,8 @@
     </div>
     <div class="hero__media">
       <picture>
-        <source type="image/webp" srcset="img/hero-terrasse-bois-pergola-renovation-560.webp 560w, img/hero-terrasse-bois-pergola-renovation-720.webp 720w" sizes="(min-width:860px) 480px, 90vw">
-        <img src="img/hero-terrasse-bois-pergola-renovation-720.jpg" srcset="img/hero-terrasse-bois-pergola-renovation-560.jpg 560w, img/hero-terrasse-bois-pergola-renovation-720.jpg 720w" sizes="(min-width:860px) 480px, 90vw" width="720" height="540" alt="Terrasse en bois exotique et pergola à claire-voie réalisées par Entreprise Felicioni devant une villa contemporaine" fetchpriority="high" decoding="async">
+        <source type="image/webp" srcset="img/hero-terrasse-bois-pergola-renovation-560.webp 560w, img/hero-terrasse-bois-pergola-renovation-720.webp 720w" sizes="(min-width:1120px) 780px, (min-width:860px) 56vw, 100vw">
+        <img src="img/hero-terrasse-bois-pergola-renovation-720.jpg" srcset="img/hero-terrasse-bois-pergola-renovation-560.jpg 560w, img/hero-terrasse-bois-pergola-renovation-720.jpg 720w" sizes="(min-width:1120px) 780px, (min-width:860px) 56vw, 100vw" width="720" height="540" alt="Terrasse en bois exotique et pergola à claire-voie réalisées par Entreprise Felicioni devant une villa contemporaine" fetchpriority="high" decoding="async">
       </picture>
       <span class="hero__tag">Terrasse bois &amp; pergola — région toulousaine</span>
     </div>
@@ -218,13 +218,13 @@
     <p class="overline reveal">Avant / Après</p>
     <h2 class="reveal">Faites glisser pour voir la transformation</h2>
     <div class="ba__tabs reveal" role="tablist" aria-label="Chantiers avant / après">
-      <button class="ba__tab" role="tab" aria-selected="true" data-panel="ba-terrasse">Terrasse carrelée</button>
-      <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-piscine">Terrasse bois &amp; piscine</button>
+      <button class="ba__tab" role="tab" aria-selected="true" data-panel="ba-piscine">Terrasse bois &amp; piscine</button>
+      <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-terrasse">Terrasse carrelée</button>
       <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-portail">Portail &amp; clôture</button>
       <button class="ba__tab" role="tab" aria-selected="false" data-panel="ba-facade">Nettoyage de façade</button>
     </div>
 
-    <div class="ba__panel reveal" id="ba-terrasse" role="tabpanel">
+    <div class="ba__panel reveal" id="ba-terrasse" role="tabpanel" hidden>
       <div class="compare">
         <img class="compare__after" src="img/apres-terrasse-1200.jpg" srcset="img/apres-terrasse-768.jpg 768w, img/apres-terrasse-1200.jpg 1200w" sizes="(min-width:860px) 1080px, 100vw" width="1200" height="674" loading="lazy" decoding="async" alt="Terrasse carrelée avec salon de jardin, après travaux">
         <img class="compare__before" src="img/avant-terrasse-1200.jpg" srcset="img/avant-terrasse-768.jpg 768w, img/avant-terrasse-1200.jpg 1200w" sizes="(min-width:860px) 1080px, 100vw" width="1200" height="674" loading="lazy" decoding="async" alt="Jardin avant travaux, pelouse à l’emplacement de la future terrasse">
@@ -239,7 +239,7 @@
       <p class="compare__caption"><b>Création de terrasse carrelée</b> — ouest toulousain</p>
     </div>
 
-    <div class="ba__panel reveal" id="ba-piscine" role="tabpanel" hidden>
+    <div class="ba__panel reveal" id="ba-piscine" role="tabpanel">
       <div class="compare compare--portrait">
         <img class="compare__after" src="img/apres-terrasse-bois-piscine-castelnaudary-680.jpg" srcset="img/apres-terrasse-bois-piscine-castelnaudary-520.jpg 520w, img/apres-terrasse-bois-piscine-castelnaudary-680.jpg 680w" sizes="(min-width:860px) 520px, 100vw" width="680" height="906" loading="lazy" decoding="async" alt="Terrasse en bois avec piscine et éclairage encastré au coucher du soleil, après travaux à Castelnaudary">
         <img class="compare__before" src="img/avant-terrasse-bois-piscine-castelnaudary-1040.jpg" srcset="img/avant-terrasse-bois-piscine-castelnaudary-520.jpg 520w, img/avant-terrasse-bois-piscine-castelnaudary-1040.jpg 1040w" sizes="(min-width:860px) 520px, 100vw" width="1040" height="1387" loading="lazy" decoding="async" alt="Cour en friche entre des murs anciens avant la création de la terrasse et de la piscine à Castelnaudary">
@@ -493,6 +493,6 @@
   <button class="lightbox__nav lightbox__nav--next" aria-label="Suivante">›</button>
 </div>
 
-<script src="js/main.js?v=3" defer></script>
+<script src="js/main.js?v=5" defer></script>
 </body>
 </html>
