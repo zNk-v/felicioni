@@ -35,15 +35,23 @@ résultats bleus. C'est là qu'il faut mettre l'énergie en premier.
 
 - [ ] **Trancher le doublon de fiche** (voir mémoire `felicioni-fiche-google`). Deux
       fiches se cannibalisent, il faut en supprimer une ou demander la fusion.
-- [ ] **URGENT — la catégorie principale est fausse.** Relevé le 13/08/2026 sur la
-      fiche publique : « **Service de rénovation de bureaux** ». Enzo rénove des
-      maisons de particuliers, pas des bureaux. Cette seule ligne décide des
-      requêtes sur lesquelles la fiche peut sortir, et elle l'exclut aujourd'hui de
-      « rénovation maison », « terrasse », « façade ».
-      À mettre : principale **Travaux généraux** (c'est la catégorie des concurrents
-      qui sortent en face : Genebat, Fernandes Rénovation). Secondaires :
-      Entrepreneur en rénovation, Constructeur de terrasses, Carreleur,
-      Entreprise de nettoyage de façades.
+- [ ] **LE BLOCAGE PRINCIPAL : la fiche n'est pas validée.** Vérifié dans le
+      back-office le 13/08/2026, message de Google : « Google a besoin
+      d'informations supplémentaires pour confirmer que vous gérez cet
+      établissement. **Vos modifications seront visibles une fois que vous aurez
+      validé votre établissement.** »
+
+      Conséquence : tout le travail du 4 et 5 août est en attente et **invisible du
+      public**. La catégorie « Travaux généraux », le nom en minuscules, la
+      description réécrite, les 12 zones et les 19 services sont enregistrés mais
+      gelés. Le public voit encore « ENTREPRISE FELICIONI » en majuscules et
+      « Service de rénovation de bureaux ».
+
+      Tant que la validation n'est pas faite, retoucher la catégorie ne sert à rien
+      et relance la file d'attente. **Une seule action compte : cliquer sur
+      « Valider » et suivre la procédure** (vidéo ou courrier selon ce que Google
+      propose). C'est Enzo qui doit la faire, ou Teddy depuis le compte
+      enzo.felicioni@icloud.com déjà connecté dans son Chrome.
 - [ ] Description de 750 caractères avec « rénovation », « Tournefeuille »,
       « ouest toulousain », « terrasse », « façade ».
 - [ ] Zone desservie : les communes réelles, pas un rayon vague.
