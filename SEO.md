@@ -35,14 +35,29 @@ résultats bleus. C'est là qu'il faut mettre l'énergie en premier.
 
 - [ ] **Trancher le doublon de fiche** (voir mémoire `felicioni-fiche-google`). Deux
       fiches se cannibalisent, il faut en supprimer une ou demander la fusion.
-- [ ] Catégorie principale : **Entrepreneur en rénovation**. Secondaires :
-      Constructeur de terrasses, Entreprise de nettoyage de façades, Carreleur.
-      La catégorie principale décide sur quelles requêtes la fiche sort.
+- [ ] **URGENT — la catégorie principale est fausse.** Relevé le 13/08/2026 sur la
+      fiche publique : « **Service de rénovation de bureaux** ». Enzo rénove des
+      maisons de particuliers, pas des bureaux. Cette seule ligne décide des
+      requêtes sur lesquelles la fiche peut sortir, et elle l'exclut aujourd'hui de
+      « rénovation maison », « terrasse », « façade ».
+      À mettre : principale **Travaux généraux** (c'est la catégorie des concurrents
+      qui sortent en face : Genebat, Fernandes Rénovation). Secondaires :
+      Entrepreneur en rénovation, Constructeur de terrasses, Carreleur,
+      Entreprise de nettoyage de façades.
 - [ ] Description de 750 caractères avec « rénovation », « Tournefeuille »,
       « ouest toulousain », « terrasse », « façade ».
 - [ ] Zone desservie : les communes réelles, pas un rayon vague.
-- [ ] **Charger les 19 photos du site sur la fiche.** Google lit les EXIF. Les photos
-      d'Enzo ont leurs coordonnées GPS d'origine, c'est un signal de proximité gratuit.
+- [ ] **Charger les 18 photos préparées.** Elles sont prêtes dans
+      `~/Desktop/Photos Google - Felicioni/`, en JPEG 2048 px, nommées par métier et
+      commune. **13 des 18 conservent leurs coordonnées GPS d'origine** (converties
+      avec `sips`, qui préserve l'EXIF, contrairement au pipeline du site).
+      La fiche n'affiche aujourd'hui qu'un onglet « Intérieur » : elle manque
+      cruellement de photos d'extérieur, terrasses et façades.
+- [ ] **Obtenir l'accès gestionnaire.** Le compte Google de Teddy ne gère que la
+      fiche Sitaly. La fiche Felicioni appartient au compte d'Enzo. Sans accès,
+      impossible de charger les photos en tant que propriétaire — et les charger en
+      simple visiteur les range dans « photos des visiteurs », avec beaucoup moins
+      de poids et un risque de suppression pour spam.
 - [ ] Section « Prestations » : une entrée par service, avec description.
 - [ ] Lien du site pointant vers `https://entreprise-felicioni.com/` (et non www).
 - [ ] **Un post Google par semaine.** 3 lignes + une photo de chantier. Ça compte.
