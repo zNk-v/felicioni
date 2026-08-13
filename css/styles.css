@@ -490,3 +490,8 @@ main{overflow-x:clip}
   .postcard--feature .postcard__body>p:not(.postcard__meta){font-size:1.05rem;max-width:46ch}
   .postcard--feature .postcard__meta{margin-top:.5rem}
 }
+
+/* Comparateur avant/après réutilisé dans un article (fond clair) */
+.prose .compare{margin:2rem auto 0}
+.prose .compare__caption{color:var(--beton)}
+.prose .compare__caption b{color:var(--bleu)}

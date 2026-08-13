@@ -79,17 +79,17 @@ beaucoup de valeur commerciale. C'est la meilleure cible du lot.
 Gros volumes, difficulté modérée, et le comparateur avant/après de Pompertuzat est
 un argument visuel que les concurrents n'ont pas.
 
-| Mot-clé | Volume/mois | KD |
-|---|---|---|
-| nettoyage façade | 1 300 | 19 |
-| ravalement de façade prix | 1 300 | 23 |
-| hydrofuge façade | 590 | 20 |
-| nettoyage façade maison prix | 210 | 26 |
-| prix nettoyage facade au m2 | 170 | 25 |
-| nettoyage facade crepi | 110 | 19 |
-| prix nettoyage façade | 110 | 19 |
-| nettoyage facade haute pression | 50 | 18 |
-| nettoyage facade toulouse | 20 | **0** |
+| Mot-clé | Volume/mois | KD | Statut |
+|---|---|---|---|
+| nettoyage façade | 1 300 | 19 | ✅ article 2 |
+| ravalement de façade prix | 1 300 | 23 | couvert par l'article 2 |
+| hydrofuge façade | 590 | 20 | couvert par l'article 2 |
+| nettoyage façade maison prix | 210 | 26 | couvert par l'article 2 |
+| prix nettoyage facade au m2 | 170 | 25 | couvert par l'article 2 |
+| nettoyage facade crepi | 110 | 19 | couvert par l'article 2 |
+| prix nettoyage façade | 110 | 19 | couvert par l'article 2 |
+| nettoyage facade haute pression | 50 | 18 | couvert par l'article 2 |
+| nettoyage facade toulouse | 20 | **0** | couvert par l'article 2 |
 
 ### Cluster C — Rénovation, requêtes locales *(priorité 3)*
 
@@ -122,7 +122,7 @@ réelles, sinon on n'apporte rien de plus que les comparateurs.
 | # | Sujet | Cible principale | Photos dispo |
 |---|---|---|---|
 | 1 | ✅ Terrasse en bois à Toulouse : combien ça coûte vraiment | terrasse bois toulouse | Castelnaudary, villa |
-| 2 | Nettoyage de façade : prix au m² et méthode | nettoyage façade maison prix | avant/après Pompertuzat, Préserville |
+| 2 | ✅ Nettoyage de façade : prix au m² et méthode | nettoyage façade maison prix | avant/après Pompertuzat, Préserville |
 | 3 | Terrasse en bois autour d'une piscine | terrasse bois autour piscine | Castelnaudary avant/après |
 | 4 | Mur de clôture et portail : le budget complet | mur de cloture prix | avant/après Merville |
 | 5 | Carrelage de terrasse en travertin | carrelage terrasse travertin | Bannières |
