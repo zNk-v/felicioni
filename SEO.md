@@ -1,6 +1,6 @@
 # SEO local — Entreprise Felicioni
 
-Document de travail. Dernière mise à jour : 12 août 2026.
+Document de travail. Dernière mise à jour : 8 septembre 2026.
 Toutes les données de volume et de difficulté viennent de Semrush (base `fr`, août 2026).
 KD = difficulté sur 100. En dessous de 25, un site jeune peut viser le top 10.
 
@@ -86,11 +86,11 @@ et Enzo a les photos.
 | Mot-clé | Volume/mois | KD | Statut |
 |---|---|---|---|
 | terrasse bois toulouse | 260 | **11** | ✅ article 1 publié |
-| terrasse bois autour piscine | 320 | 16 | article 3 |
+| terrasse bois autour piscine | 320 | 16 | ✅ article 3 publié |
 | pose terrasse bois | 1 300 | 21 | couvert par l'article 1 |
 | prix terrasse bois m2 | 1 000 | 24 | couvert par l'article 1 |
 | terrasse bois prix | 720 | 26 | couvert par l'article 1 |
-| plage de piscine bois | 90 | 12 | article 3 |
+| plage de piscine bois | 90 | 12 | couvert par l'article 3 |
 | carrelage terrasse travertin | 140 | **14** | article 5 |
 | prix carrelage terrasse | 170 | 25 | article 5 |
 
@@ -146,7 +146,7 @@ réelles, sinon on n'apporte rien de plus que les comparateurs.
 |---|---|---|---|
 | 1 | ✅ Terrasse en bois à Toulouse : combien ça coûte vraiment | terrasse bois toulouse | Castelnaudary, villa |
 | 2 | ✅ Nettoyage de façade : prix au m² et méthode | nettoyage façade maison prix | avant/après Pompertuzat, Préserville |
-| 3 | Terrasse en bois autour d'une piscine | terrasse bois autour piscine | Castelnaudary avant/après |
+| 3 | ✅ Terrasse en bois autour d'une piscine : le prix et les pièges | terrasse bois autour piscine | Castelnaudary avant/après, Pujaudran, plage béton |
 | 4 | Mur de clôture et portail : le budget complet | mur de cloture prix | avant/après Merville |
 | 5 | Carrelage de terrasse en travertin | carrelage terrasse travertin | Bannières |
 | 6 | Combien coûte une rénovation complète | devis renovation maison | Toulouse, villa |
