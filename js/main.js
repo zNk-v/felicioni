@@ -159,7 +159,7 @@
       var label = btn.textContent; btn.disabled = true; btn.textContent = 'Envoi…';
       fetch(action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
         .then(function (r) {
-          if (r.ok) { form.reset(); okBox.style.display = 'block'; okBox.scrollIntoView({ block: 'center' }); }
+          if (r.ok) { form.reset(); okBox.style.display = 'block'; okBox.scrollIntoView({ block: 'center' }); if (window.efTrack) window.efTrack('generate_lead', { formulaire: 'devis' }); }
           else throw new Error('bad');
         })
         .catch(function () {
