@@ -20,6 +20,7 @@ felicioni/
 ├── img/                           Images responsives (WebP + fallback JPG, 480/960…)
 │   └── brand/                     Logo, favicons, image Open Graph
 ├── favicon.ico  robots.txt  sitemap.xml  site.webmanifest
+├── .htaccess  404.html          Redirections (www, anciennes URL Wix) + page d'erreur
 ├── assets-source/                 Photos & logo d'origine (NON déployés — sources de travail)
 ├── PHOTOS.md  DESIGN.md           Documentation de conception
 └── README.md

@@ -1,0 +1,18 @@
+# Page d'erreur maison (au lieu de la page 404 en anglais de l'hébergeur)
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# www.entreprise-felicioni.com -> entreprise-felicioni.com (une seule adresse officielle)
+RewriteCond %{HTTP_HOST} ^www\.entreprise-felicioni\.com$ [NC]
+RewriteRule ^ https://entreprise-felicioni.com%{REQUEST_URI} [R=301,L]
+
+# Anciennes adresses (ancien site Wix) encore connues de Google et des moteurs de recherche
+RewriteRule ^(services|prestations)/?$ https://entreprise-felicioni.com/#prestations [R=301,NE,L]
+RewriteRule ^(contact|devis|contactez-nous)/?$ https://entreprise-felicioni.com/#contact [R=301,NE,L]
+RewriteRule ^(realisations|galerie|gallery|portfolio)/?$ https://entreprise-felicioni.com/#realisations [R=301,NE,L]
+RewriteRule ^(avis|temoignages)/?$ https://entreprise-felicioni.com/#avis [R=301,NE,L]
+RewriteRule ^(accueil|home|index\.php)/?$ https://entreprise-felicioni.com/ [R=301,L]
+
+# Pages légales tapées sans le ".html"
+RewriteRule ^(mentions-legales|politique-confidentialite)/?$ https://entreprise-felicioni.com/$1.html [R=301,L]
